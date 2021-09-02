@@ -18,6 +18,7 @@ if(isset($_POST['save'])){
     $_SESSION['msg_type']="success";
 
     header("location: scrum.php");
+    exit();
 }   
 
 if(isset($_GET['delete'])){
@@ -28,6 +29,7 @@ if(isset($_GET['delete'])){
     $_SESSION['msg_type']="warning";
 
     header("location: scrum.php");
+    exit();
 }
 
 if(isset($_GET['edit'])){
@@ -56,4 +58,5 @@ if(isset($_POST['update'])){
     $_SESSION['msg_type']="warning";
 
     header('location: scrum.php');
+    exit();
 }
